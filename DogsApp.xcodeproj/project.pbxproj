@@ -27,6 +27,10 @@
 		CF18AF5528093AD10034B031 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AF5328093AD10034B031 /* DogTableViewCell.swift */; };
 		CF18AF5628093AD20034B031 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF18AF5428093AD10034B031 /* DogTableViewCell.xib */; };
 		CF18AF58280953E40034B031 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AF57280953E40034B031 /* TitleView.swift */; };
+		CF18AF5928095C9A0034B031 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AED82807159E0034B031 /* Dog.swift */; };
+		CF18AF5A28095CA20034B031 /* DogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AEDB280716310034B031 /* DogDataSource.swift */; };
+		CF18AF5B28095D040034B031 /* DogRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AEEC2807219C0034B031 /* DogRepositoryImpl.swift */; };
+		CF18AF5C28095E660034B031 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18AEE92807214F0034B031 /* DogRepository.swift */; };
 		CF51B73228051CC8006A20E3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51B73128051CC8006A20E3 /* Tests_iOS.swift */; };
 		CF51B73428051CC8006A20E3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51B73328051CC8006A20E3 /* Tests_iOSLaunchTests.swift */; };
 		CF51B73E28051CC8006A20E3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51B73D28051CC8006A20E3 /* Tests_macOS.swift */; };
@@ -515,8 +519,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF18AF5B28095D040034B031 /* DogRepositoryImpl.swift in Sources */,
 				CF51B73428051CC8006A20E3 /* Tests_iOSLaunchTests.swift in Sources */,
 				CF51B73228051CC8006A20E3 /* Tests_iOS.swift in Sources */,
+				CF18AF5928095C9A0034B031 /* Dog.swift in Sources */,
+				CF18AF5C28095E660034B031 /* DogRepository.swift in Sources */,
+				CF18AF5A28095CA20034B031 /* DogDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
