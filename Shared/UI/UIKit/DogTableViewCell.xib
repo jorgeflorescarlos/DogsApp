@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DogTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="DogTableViewCell" customModule="DogsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-n8-Igi">
+                        <rect key="frame" x="140" y="30" width="235" height="170"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dog's name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suG-2f-cWW">
+                                <rect key="frame" x="40" y="15" width="126" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5E-4k-aOH">
+                                <rect key="frame" x="40" y="55" width="180" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgm-Md-XEx">
+                                <rect key="frame" x="40" y="79.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="r5E-4k-aOH" secondAttribute="trailing" constant="15" id="1uS-aG-hoX"/>
+                            <constraint firstItem="Kgm-Md-XEx" firstAttribute="top" secondItem="r5E-4k-aOH" secondAttribute="bottom" constant="10" id="8rF-Hk-Tvk"/>
+                            <constraint firstItem="r5E-4k-aOH" firstAttribute="leading" secondItem="e3D-n8-Igi" secondAttribute="leading" constant="40" id="ACI-Lv-i2k"/>
+                            <constraint firstItem="Kgm-Md-XEx" firstAttribute="leading" secondItem="e3D-n8-Igi" secondAttribute="leading" constant="40" id="Ftk-7x-eRH"/>
+                            <constraint firstItem="suG-2f-cWW" firstAttribute="leading" secondItem="e3D-n8-Igi" secondAttribute="leading" constant="40" id="JxO-oS-4o6"/>
+                            <constraint firstItem="suG-2f-cWW" firstAttribute="top" secondItem="e3D-n8-Igi" secondAttribute="top" constant="15" id="axy-LH-WSB"/>
+                            <constraint firstItem="r5E-4k-aOH" firstAttribute="top" secondItem="suG-2f-cWW" secondAttribute="bottom" constant="10" id="eQN-Z0-fqd"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSY-3d-Qfq">
+                        <rect key="frame" x="9" y="0.0" width="150" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="210" id="PO4-iS-s9E"/>
+                            <constraint firstAttribute="width" constant="150" id="oLh-Rn-hnC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="e3D-n8-Igi" secondAttribute="trailing" constant="20" id="1nD-jQ-gle"/>
+                    <constraint firstItem="vSY-3d-Qfq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DlV-Qy-aBc"/>
+                    <constraint firstItem="e3D-n8-Igi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="140" id="W49-GR-zqJ"/>
+                    <constraint firstAttribute="bottom" secondItem="e3D-n8-Igi" secondAttribute="bottom" constant="30" id="WE3-JI-b6Y"/>
+                    <constraint firstItem="vSY-3d-Qfq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="l8U-bk-KOq"/>
+                    <constraint firstItem="e3D-n8-Igi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="rfw-f2-sxL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="age" destination="Kgm-Md-XEx" id="F7P-Sz-gyg"/>
+                <outlet property="card" destination="e3D-n8-Igi" id="n01-E5-zEX"/>
+                <outlet property="dogDescription" destination="r5E-4k-aOH" id="Vcq-hB-c80"/>
+                <outlet property="name" destination="suG-2f-cWW" id="z5o-1H-76f"/>
+                <outlet property="photo" destination="vSY-3d-Qfq" id="ZJ8-0y-oNJ"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
